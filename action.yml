@@ -2,8 +2,8 @@ name: "parrajustin helm chart releaser"
 description: "Host a Helm charts repo on GitHub Pages"
 author: "The Helm authors + parrajustin"
 branding:
-  color: blue
-  icon: anchor
+  color: red
+  icon: x
 inputs:
   version:
     description: "The chart-releaser version to use (default: v0.2.3)"
