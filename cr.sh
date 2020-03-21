@@ -165,8 +165,11 @@ install_chart_releaser() {
     echo "Installing chart-releaser..."
 
     curl -sSLo cr.tar.gz "https://github.com/helm/chart-releaser/releases/download/v0.2.3/chart-releaser_0.2.3_linux_amd64.tar.gz"
+    echo "curled gzip"
     tar -xzf cr.tar.gz
+    echo "taring"
     sudo mv cr /usr/local/bin/cr
+    echo "moving"
 }
 
 lookup_latest_tag() {
