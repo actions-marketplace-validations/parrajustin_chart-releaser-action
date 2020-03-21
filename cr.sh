@@ -18,7 +18,7 @@ set -o errexit
 set -o nounset
 set -o pipefail
 
-DEFAULT_CHART_RELEASER_VERSION=v0.2.3
+DEFAULT_CHART_RELEASER_VERSION=v0.2.3F
 
 : "${CR_TOKEN:?Environment variable CR_TOKEN must be set}"
 
@@ -197,7 +197,7 @@ package_chart() {
     local chart="$1"
 
     echo "Packaging chart '$chart'..."
-    helm package "$chart" --destination .cr-release-packages --dependency-update --save=false
+    helm package "$chart" --destination .cr-release-packages --dependency-update
 }
 
 release_charts() {
