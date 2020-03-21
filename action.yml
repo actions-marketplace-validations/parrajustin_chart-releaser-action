@@ -1,6 +1,6 @@
-name: "Helm Chart Releaser"
+name: "parrajustin helm chart releaser"
 description: "Host a Helm charts repo on GitHub Pages"
-author: "The Helm authors"
+author: "The Helm authors + parrajustin"
 branding:
   color: blue
   icon: anchor
